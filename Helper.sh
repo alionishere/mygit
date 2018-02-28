@@ -708,3 +708,21 @@ sh dev/make-distribution.sh --mvn /home/bigdata/env/maven/apache-maven-3.3.9/bin
 # cloudera 仓库repository
 https://repository.cloudera.com/artifactory/cloudera-repos/
 
+# 资源管理控制
+# yarn队列提交spark任务权限控制
+https://www.cnblogs.com/xiaodf/p/6266201.html
+http://lxw1234.com/archives/2015/10/536.htm
+http://lxw1234.com/archives/2016/06/696.htm
+
+# docker操作
+export https_proxy=http://207.207.30.7:8001
+export http_proxy=http://207.207.30.7:8001
+docker run -p 4000:80 demo:v1
+docker run -p 80:80 demo:v1
+docker run -p 8800:80 demo:v1
+docker run -it -p 4000:80 demo:v1   /bin/bash
+docker run -it --rm -v /home/whk/app/docker:/app -p 4000:80 demo2:v2   /bin/bash
+docker run -it --rm -v /share:/share -p 4000:80 demo:v1   /bin/bash
+
+# 创建新Linux用户
+useradd -u 544 -d /usr/other3  -g other -m  other3

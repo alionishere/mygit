@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<allocations>
+    <queue name="hive">
+        <maxResources>28672 mb,13 vcores</maxResources>
+        <minResources>28672 mb,13 vcores</minResources>
+    </queue>
+
+
+<queue name="other001">
+<minResources>10240 mb,1 vcores</minResources>
+<maxResources>30720 mb,3 vcores</maxResources>
+<maxRunningApps>100</maxRunningApps>
+<schedulingMode>fair</schedulingMode>
+<weight>1.0</weight>
+<aclSubmitApps>other1,root</aclSubmitApps>
+</queue>
+
+<queue name="other002">
+<minResources>10240 mb,1 vcores</minResources>
+<maxResources>30720 mb,3 vcores</maxResources>
+<maxRunningApps>100</maxRunningApps>
+<schedulingMode>fair</schedulingMode>
+<weight>1.0</weight>
+<aclSubmitApps>other2,root</aclSubmitApps>
+</queue>
+<queue name="other003">
+<minResources>10240 mb,1 vcores</minResources>
+<maxResources>30720 mb,3 vcores</maxResources>
+<maxRunningApps>100</maxRunningApps>
+<schedulingMode>fair</schedulingMode>
+<weight>1.0</weight>
+<aclSubmitApps>other3</aclSubmitApps>
+</queue>
+<queue name="other004">
+<minResources>196600 mb,60 vcores</minResources>
+<maxResources>196608 mb,60 vcores</maxResources>
+<maxRunningApps>100</maxRunningApps>
+<schedulingMode>fair</schedulingMode>
+<weight>1.0</weight>
+<aclSubmitApps>user1,user2</aclSubmitApps>
+</queue>
+
+<queue name="default">
+    <maxResources>0 mb,0 vcores</maxResources>
+    </queue>
+</allocations>

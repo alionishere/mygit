@@ -1,0 +1,68 @@
+<configuration>
+<property>  
+    <name>yarn.resourcemanager.scheduler.class</name>  
+    <value>org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</value>  
+</property>
+
+
+  <property>
+    <name>yarn.scheduler.capacity.root.queues</name>  
+    <value>default,wa,yq</value> 
+  </property>
+  <property>
+    <name>yarn.scheduler.capacity.root.capacity</name>  
+    <value>100</value> 
+  </property>
+  <property> 
+    <name>yarn.scheduler.capacity.root.acl_administer_queue</name>  
+    <value>admin</value> 
+  </property>  
+  <property> 
+    <name>yarn.scheduler.capacity.root.acl_submit_applications</name>  
+    <value>admin</value> 
+  </property>
+  <property> 
+    <name>yarn.scheduler.capacity.root.default.capacity</name> 
+    <value>30</value> 
+  </property>  
+  <property> 
+    <name>yarn.scheduler.capacity.root.default.maximum-capacity</name>  
+    <value>35</value> 
+  </property>  
+  <property> 
+    <name>yarn.scheduler.capacity.root.wa.capacity</name>  
+    <value>45</value> 
+  </property>  
+  <property> 
+    <name>yarn.scheduler.capacity.root.wa.maximum-capacity</name>  
+    <value>50</value> 
+  </property>  
+<property> 
+    <name>yarn.scheduler.capacity.root.yq.capacity</name>  
+    <value>25</value> 
+  </property>  
+  <property> 
+    <name>yarn.scheduler.capacity.root.yq.maximum-capacity</name>  
+    <value>30</value> 
+  </property>  
+  <property> 
+    <name>yarn.scheduler.capacity.root.wa.acl_administer_queue</name>  
+    <value>admin,user01</value> 
+  </property>  
+  <property> 
+    <name>yarn.scheduler.capacity.root.wa.acl_submit_applications</name>  
+    <value>admin,user01</value> 
+  </property>  
+  <property> 
+    <name>yarn.scheduler.capacity.root.yq.acl_administer_queue</name>  
+    <value>admin,user02</value> 
+  </property>  
+  <property> 
+    <name>yarn.scheduler.capacity.root.yq.acl_submit_applications</name>  
+    <value>admin,user02</value> 
+  </property>  
+   <property> 
+    <name>yarn.scheduler.capacity.resource-calculator</name>  
+    <value>org.apache.hadoop.yarn.util.resource.DominantResourceCalculator</value> 
+  </property>  
+</configuration>
